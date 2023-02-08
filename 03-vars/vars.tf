@@ -32,3 +32,10 @@ variable "sample3" {
 output "sample3" {
   value = var.sample3
 }
+
+# variable from Tfvars
+variable "demo5" {}
+output "demo5" {
+  value = var.demo5
+}
+
