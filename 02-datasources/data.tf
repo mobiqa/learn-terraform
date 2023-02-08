@@ -9,3 +9,8 @@ data "aws_ami" "example" {
 output "ami" {
   value = data.aws_ami.example
 }
+
+data "aws_instance" "foo" {
+  instance_id = "i-0bd3c2ffe91e93669"
+
+  }
