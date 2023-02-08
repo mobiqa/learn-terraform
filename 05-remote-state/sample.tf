@@ -16,10 +16,3 @@ resource "aws_instance" "web" {
     Name = "test-centos8"
   }
 }
-terraform {
-  backend "s3" {
-    bucket = "terraform-mobiqa"
-    key    = "05-remote-state/terraform.tfstate"
-    region = "us-east-1"
-  }
-}
