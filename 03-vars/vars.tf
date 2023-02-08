@@ -1,11 +1,11 @@
-variable "sample" {
-  default = 10
-
-}
-
-output "sample" {
-  value = var.sample
-}
+#variable "sample" {
+#  default = 10
+#
+#}
+#
+#output "sample" {
+#  value = var.sample
+#}
 
 # String Data type
 variable "sample1" {
