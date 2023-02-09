@@ -1,11 +1,12 @@
 resource "aws_instance" "web" {
   ami           = data.aws_ami.centos8.id
-  instance_type = "t3.micro"
+  instance_type = var.type == "null" ? "t3.micro" : var.type
 
   tags = {
-    Name = "test-centos8"
+    Name = "demo"
   }
 }
+
 
 data "aws_ami" "centos8" {
   most_recent = true
@@ -13,8 +14,6 @@ data "aws_ami" "centos8" {
   owners      = ["973714476881"]
 }
 
-output "instance_profile" {
-  #value = aws_instance.web.*.id[1]
-  value = try(aws_instance.web.*.id[1], "")
-
+variable "type" {
+  default = "null"
 }
