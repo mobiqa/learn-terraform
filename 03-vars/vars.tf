@@ -10,6 +10,10 @@ output "sample" {
 variable "sample1" {
   default = "Hello World"
 }
+output "sample1" {
+  value = var.sample1
+}
+
 
 # Number data type
 variable "sample2" {
