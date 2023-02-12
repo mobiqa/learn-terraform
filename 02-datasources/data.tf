@@ -10,6 +10,10 @@ output "ami" {
   value = data.aws_ami.example.*.id
 }
 
+output "snapshotid" {
+  value = data.aws_ami.example.root_snapshot_id
+}
+
 data "aws_instance" "foo" {
   instance_id = "i-0bd3c2ffe91e93669"
 
