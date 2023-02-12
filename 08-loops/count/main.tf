@@ -15,7 +15,9 @@ data "aws_ami" "centos8" {
   owners      = ["973714476881"]
 }
 
-
+output "publicip" {
+  value = "aws_instance.web.public_ip"
+}
 
 
 
