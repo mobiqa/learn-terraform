@@ -13,8 +13,8 @@ output "ami" {
 output "snapshotid" {
   value = data.aws_ami.example.root_snapshot_id
 }
-output "provider" {
-  value = data.aws_ami.example.provider
+output "imagelocation" {
+  value = data.aws_ami.example.image_location
 
 }
 
