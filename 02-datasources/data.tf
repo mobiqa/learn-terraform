@@ -21,6 +21,6 @@ data "aws_instance" "foo" {
 
   }
 output "instance" {
-  value = data.aws_instance.foo.instance_type
+  value = data.aws_instance
 }
 
