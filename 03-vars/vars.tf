@@ -76,6 +76,19 @@ output "demo1" {
   value = var.demo1
 }
 
+## Variables from tfvars
+variable "demo2" {}
+output "demo1" {
+  value = var.demo1
+}
+
+## Variables from tfvars
+variable "demo3" {}
+output "demo1" {
+  value = var.demo1
+}
+
+
 ## Variables from SHELL env variables
 variable "demo2" {
   default = null
