@@ -9,3 +9,11 @@ output "demo1" {
 output "demo2" {
   value = "venkatmobiqa"
 }
+
+output "demo3" {
+  value = "venkatmobiqa"
+}
+
+output "demo4" {
+  value = "venkatmobiqa"
+}
