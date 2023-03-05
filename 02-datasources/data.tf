@@ -16,11 +16,11 @@ output "imagelocation" {
 
 }
 
-data "aws_instance" "foo" {
-  instance_id = "i-066cbd32dd320b769"
-
-  }
-output "instance" {
-  value = data.aws_instance.foo
-}
+#data "aws_instance" "foo" {
+#  instance_id = "i-066cbd32dd320b769"
+#
+#  }
+#output "instance" {
+#  value = data.aws_instance.foo
+#}
 
