@@ -77,15 +77,15 @@ output "demo1" {
 }
 
 ## Variables from tfvars
-variable "demo2" {}
-output "demo1" {
-  value = var.demo1
+variable "demo4" {}
+output "demo4" {
+  value = var.demo4
 }
 
 ## Variables from tfvars
 variable "demo3" {}
-output "demo1" {
-  value = var.demo1
+output "demo3" {
+  value = var.demo3
 }
 
 
