@@ -10,7 +10,7 @@ module "ec2" {
 
 terraform {
   backend "s3" {
-    bucket = "ncrvenkat"
+    bucket = "venkat11"
     key    = "06-modules/terraform.tfstate"
     region = "us-east-1"
   }
