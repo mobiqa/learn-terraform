@@ -22,7 +22,7 @@ resource "aws_instance" "web" {
 
 terraform {
   backend "s3" {
-    bucket = "venkat11"
+    bucket = "venkat13"
     key    = "05-remote-state/terraform.tfstate"
     region = "us-east-1"
   }
